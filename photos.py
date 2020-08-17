@@ -25,9 +25,9 @@ if __name__ == "__main__":
 	review=""
 	photo_count = 0
 	dup_count = 0
-	path = "%s/Albums/%s" % (config.photo_path, "iphone")
-	temp_paths = config.photo_temp_path.split(";")
-	dup_path = "%s/Duplicates" % config.photo_path
+	path = "%s/Albums/%s" % (config.path, "iphone")
+	temp_paths = config.temp_path.split(";")
+	dup_path = "%s/Duplicates" % config.path
 	for temp_path in temp_paths:
 		try:
 			files = ""
